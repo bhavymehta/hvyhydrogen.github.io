@@ -6,118 +6,424 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class=" bg-white">
+<body class="">
 
   
-    <!--NAVBAR-->
-    <nav class=" p-4 sm:px-0 z-10 bg-white shadow-xl w-full fixed">
-      <div class="flex flex-wrap relative mx-auto justify-between items-center min-w-full">
-
-          <a href="http://www.cital.store/" class="flex items-center">
-              <img src="https://www.cital.store/assets/cital_logo-fedb7bbd6851a318549eb781b17f0b08a37a8bf4adb0fe4306088200ed79a618.webp" class="h-14" alt="CITAL">
-          </a>
-
-          
-          <div class="flex-row flex-grow-1 pt-1 mt-1 relative text-gray-600 bg-gray-100 rounded-lg">
-              <form class="hidden md:block" action="">
-              <input class="bg-gray-100 w-96 h-10 px-5 pr-16 rounded-3xl text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
-              <button type="submit" class="absolute right-0 top-0 mt-3 mr-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                    
-              </button>
-            </form>
-
-          </div>
-
-          <!-- div class="justify-evenly align-middle p-5">
-              <ul class="font-medium flex flex-row ">
-                  <li class="">
-                      <a href="#home" class="p-3 text-white hover:text-orange-600 ">HOME</a>
-                  </li>
-                  
-                  <li class="">
-                      <a href="#about" class="p-3 text-white hover:text-orange-600 ">ABOUT</a>
-                  </li>
-
-                  
-                  <li class="">
-                      <a href="#contact" class="p-3 text-white hover:text-orange-600 ">CONTACT</a>
-                  </li>
-              </ul>
-          </div -->
-
-          <div class="p-3 hidden lg:block mt-1 relative bg-gray-100 rounded-lg text-gray-500">
-              Delivery to:  
-              <input type="text" name="site" id="site" class="bg-transparent border-dashed" placeholder=" Enter a Site...">
-
-          </div>
-
-
-      
-          <div class="flex relative">
-
-
-            <div class="flex flex-col items-center sm:mx-16 mt-1 px-4 mx-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-              </svg>
-              <span class="-m-2 hidden sm:block font-medium">Cart</span>
-            </div>
-
+      <!--NAVBAR-->
+      <nav class=" p-4 sm:px-0 z-20 bg-white shadow-xl w-full fixed">
+        <div class="flex flex-wrap bg-white relative mx-auto md:justify-between items-center min-w-full">
+  
+            <a href="http://www.cital.store/" class="flex items-center md:ml-3">
+                <img src="https://www.cital.store/assets/cital_logo-fedb7bbd6851a318549eb781b17f0b08a37a8bf4adb0fe4306088200ed79a618.webp" class="h-10 sm:h-14" alt="CITAL">
+            </a>
+  
             
-
-
-            <div class="flex flex-col items-center sm:mx-4 mx-auto sm:mr-10 relative ">
-            <button type="button" class=" p-1 focus:outline-none rounded-full focus:ring-2 focus:ring-black" aria-expanded="false" aria-haspopup="true" id="profile-menu">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="h-10 w-10 focus:bg-gray-800" data-dropdown-toggle="dropdown">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                          </svg>
-                          <span></span>
-                        </button>
-                   
-                        
-
-                         
-                          </div>
-
-                        </div>              
+            <div class="flex-row mt-1 relative w-1/3 text-gray-600 bg-white rounded-lg">
+                <form class="hidden md:block" action="">
+                <input class="bg-gray-100 w-full h-10 px-5 pr-16 rounded-lg text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+                <button type="submit" class="absolute right-0 top-0 mt-2 mr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
                       
-               
-            
+                </button>
+              </form>
+  
+            </div>
+  
+            <!-- div class="justify-evenly align-middle p-5">
+                <ul class="font-medium flex flex-row ">
+                    <li class="">
+                        <a href="#home" class="p-3 text-white hover:text-orange-600 ">HOME</a>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#about" class="p-3 text-white hover:text-orange-600 ">ABOUT</a>
+                    </li>
+  
+                    
+                    <li class="">
+                        <a href="#contact" class="p-3 text-white hover:text-orange-600 ">CONTACT</a>
+                    </li>
+                </ul>
+            </div -->
+  
+            <div class="p-2 pl-2 hidden lg:block md:w-1/4 mt-1 relative bg-gray-100 rounded-lg text-gray-500">
+                Delivery to:  
+                <input type="text" name="site" id="site" class="bg-transparent" placeholder=" Enter a Site...">
+  
+            </div>
+  
+  
+        
+            <div class="hidden md:flex relative">
+  
+  
+              <div class="flex flex-col items-center sm:ml-16 sm:mr-5 mt-1 px-4 mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <span class="-m-2 hidden sm:block text-sm font-medium">Cart</span>
+              </div>
+  
+              
+  
+  
+              <div class="flex flex-col items-center sm:mx-4 mx-auto sm:mr-10 relative ">
+              <button type="button" class=" p-1 focus:outline-none rounded-full " aria-expanded="false" aria-haspopup="true" id="profile-menu">
+                            
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  
+                            
+                            <span class="-m-2 hidden sm:block text-sm font-medium">Account</span>
+                          </button>
+                     
+                          
+  
+                           
+                            </div>
+  
+                          </div>              
+                        
+                 
+              
+                  
+            </div>
+        
+  
+    </nav>
+  
+    <div class="md:hidden z-10 flex flex-col w-full fixed bg-white pt-20 shadow-xl">
+  
+      <form class="md:hidden" action="">
+        <input class="bg-white h-10 w-full px-5 text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+        <button type="submit" class="absolute right-0 top-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              
+        </button>
+      </form>
+  
+    </div>
+  
+
+ 
+
+  
+
+        <!--Breadcrumbs navigation-->
+        <!--div class="block bg-white pt-36 py-2 md:py-0 md:pt-28 px-5 md:px-5 ">
+          <nav class="flex" aria-label="Breadcrumb">
+              <ol role="list" class="flex items-center space-x-4">
+                <li>
+                  <div>
+                    <a href="#" class="text-gray-600 hover:text-gray-500">
+                      <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Safety</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-bold text-gray-800 hover:text-gray-700">Safety Shoes</a>
+                  </div>
+                </li>
+
                 
+                </ol>
+          
+      </div-->
+
+      <div>
+      <div class="pt-40 h-full w-full">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Naye Zamane Ka <br> <span class="text-orange-600">Construction Store</span></h1>
+            <p class="mt-6 text-lg leading-6 text-gray-600"> Free delivery of hardware, safety, wood, and more at your site, on time, at the best prices, and correct bills! Always!</p>
+           
+            
           </div>
       </div>
-
-  </nav>
-
-  <div class="md:hidden flex flex-col w-full fixed bg-white pt-24 shadow-xl">
-
-    <form class="md:hidden" action="">
-      <input class="bg-white h-10 w-full px-5 text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
-      <button type="submit" class="absolute right-0 top-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-            </svg>
-            
-      </button>
-    </form>
-
-  </div>
 
   
     <!--CATEGORIES-->
 
+    <div class="mt-16 md:mt-26 w-full text-center text-2xl font-bold text-gray-600 -mb-5">
+      Featured Categories
+    </div>
+
+    <div class="flex flex-wrap justify-center sm:pl-5 w-full">
+
+      
+    <div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+      <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+          <div class="md:bg-white overflow-hidden md:overflow-visible">
+              <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/safety.png" alt="">
+           
+          <div class="text-center">
+             <div>
+                <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Safety</p>
+                
+             </div>
+             
+          </div>
+      </div>
+        </a>
+  </div>
+
+  
+      
+  <div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+    <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+        <div class="md:bg-white overflow-hidden md:overflow-visible">
+            <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/electrical.png" alt="">
+         
+        <div class="text-center">
+           <div>
+              <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Electricals</p>
+              
+           </div>
+           
+        </div>
+    </div>
+      </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/fasteners.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Fasteners</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/stationery.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Stationery</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/cement.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Cement</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/ply.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Ply & Wood</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/hardware.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Hardware & Tools</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/machine.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Machines & Power Tools</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/chemicals.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Chemicals & Adhesives</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/pipes.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Pipes, Fittings, & Adhesives</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/scaffolding.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Scaffolding & Formwork</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
    
-    <div class="pt-40 flex flex-wrap bg-white justify-evenly">
+    <!--div class="pt-40 flex flex-wrap bg-white justify-evenly">
          
         
         
      
 
-            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md h-42 w-42">
-               <a href="#SAFETY"><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="mx-auto h-36 w-36" alt="SAFETY"> Safety </a>
+      
+      
+      <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+        
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md h-52 w-52 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="w-1/2 sm:w-48">Chemicals & Adhesives</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+
+      <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md h-42 w-42">
+               <a href="#SAFETY"><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="mx-auto h-36 w-36" alt="SAFETY"> Chemicals & Adhesives </a>
             </div>
 
             
@@ -153,6 +459,16 @@
 
         
 
+            <div class="flex m-auto sm:m-5 p-5 md:p-5 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md w-1/2 sm:w-44 sm:h-60">
+              <a href="#CHEMICALS" class="">
+                <div class="flex flex-col justify-center">
+                <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclFZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd25894163beb20a4cfa70a9607ac221bd26591/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(27).png" class="h-36 w-36" alt="CHEMICALS"><div class="flex justify-center">Chemicals & Adhesives</div>
+              </div>
+              
+              </a>
+          </div>
+          
+
           <div class="p-5 sm:m-5 font-bold font text-lg sm:text-xl text-gray-700 shadow-md h-42 w-42">
                 <a href="#CHEMICALS" class="">
                   
@@ -180,7 +496,7 @@
             
             <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
                 <a href="#Pipes & Fittings" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBak1jIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cda2558937e17bac70648f09855066aa7de2c02c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(39).png" class="mx-auto h-36 w-36" alt="Pipes & Fittings">Scaffolding & Formwork</a>
-            </div>
+            </div-->
           
 
           
@@ -189,10 +505,58 @@
         
     
     </div>
+
+    <div class="relative isolate overflow-hidden bg-white px-6 mt-20 py-24 lg:overflow-visible lg:px-0">
+  <div class="mx-auto max-w-2xl flex flex-col items-center">
+    <p class="text-base font-semibold leading-7 uppercase text-center text-orange-600 ">Never lose time & money again!</p>
+    <h1 class="mt-2 text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl">Simply, order on Cital</h1>
+  </div>
+  <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0  py-8">
+    <div class="flex flex-col items-center w-full md:w-1/2 px-4 py-4">
+      <div class="flex flex-col items-center">
+        <span class="text-6xl font-black text-gray-400">1.</span>
+        <p class="font-bold text-xl text-center">
+          Site team places order
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Place order on cital" src="/prdct-ref/asset1.png" />
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full md:w-1/2 py-4">
+      <div class="flex flex-col items-center">
+        <span class="text-6xl font-black text-gray-400">2.</span>
+        <p class="font-bold text-xl text-center">
+          Authorised person checks & approves
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Authorised person approves order" src="/prdct-ref/asset2.png" />
+      </div>
+    </div>
+  </div>
+  <div class="relative isolate overflow-hidden bg-white px-6 md:pt-20 lg:overflow-visible lg:px-0">
+    <div class="flex flex-col items-center w-full py-4">
+      <div class="flex flex-col items-center py-8">
+        <span class="text-6xl font-black text-orange-400">3.</span>
+        <p class="font-bold text-xl text-center">
+          We deliver at site within 12 hrs
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Cital delivers in 12 hrs" src="/prdct-ref/asset3.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
     <!--Footer-->
     
     <!--Footer container-->
-<footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600">
+<footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600 pb-16 md:pb-0">
 
     <!--Socials-->
     <div class="flex p-5 justify-center">
@@ -959,6 +1323,36 @@
       © 2023 Cital Infra Services Private Limited. All rights reserved.
     </div>
   </footer>
+
+
+
+  <!--sm btm Navbar -->
+  <div class="flex md:hidden bottom-0 z-20 h-14 pb-1 bg-white w-full fixed  justify-evenly"><!--bg-gradient-to-t from-white-->
+                                                       
+            
+    <div class="mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+    </div>
+    <div class=" mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          
+          
+    </div>
+
+    <div class="mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          
+    </div>
+
+
+  </div>
+
 
            
     
